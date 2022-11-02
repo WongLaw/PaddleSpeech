@@ -68,6 +68,26 @@ asr_dynamic_pretrained_models = {
             '',
         },
     },
+    "conformer_u2pp_online_wenetspeech-zh-16k": {
+        '1.3': {
+            'url':
+            'https://paddlespeech.bj.bcebos.com/s2t/wenetspeech/asr1/asr1_chunk_conformer_u2pp_wenetspeech_ckpt_1.3.0.model.tar.gz',
+            'md5':
+            '62d230c1bf27731192aa9d3b8deca300',
+            'cfg_path':
+            'model.yaml',
+            'ckpt_path':
+            'exp/chunk_conformer_u2pp/checkpoints/avg_10',
+            'model':
+            'exp/chunk_conformer_u2pp/checkpoints/avg_10.pdparams',
+            'params':
+            'exp/chunk_conformer_u2pp/checkpoints/avg_10.pdparams',
+            'lm_url':
+            '',
+            'lm_md5':
+            '',
+        },
+    },
     "conformer_online_multicn-zh-16k": {
         '1.0': {
             'url':
@@ -529,7 +549,7 @@ text_dynamic_pretrained_models = {
             'ckpt/model_state.pdparams',
             'vocab_file':
             'punc_vocab.txt',
-        },
+        }
     },
     "ernie_linear_p3_wudao-punc-zh": {
         '1.0': {
@@ -543,8 +563,22 @@ text_dynamic_pretrained_models = {
             'ckpt/model_state.pdparams',
             'vocab_file':
             'punc_vocab.txt',
-        },
+        }
     },
+    "ernie_linear_p3_wudao_fast-punc-zh": {
+        '1.0': {
+            'url':
+            'https://paddlespeech.bj.bcebos.com/text/ernie_linear_p3_wudao_fast-punc-zh.tar.gz',
+            'md5':
+            'c93f9594119541a5dbd763381a751d08',
+            'cfg_path':
+            'ckpt/model_config.json',
+            'ckpt_path':
+            'ckpt/model_state.pdparams',
+            'vocab_file':
+            'punc_vocab.txt',
+        }
+    }
 }
 
 # ---------------------------------

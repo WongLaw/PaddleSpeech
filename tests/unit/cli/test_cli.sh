@@ -7,7 +7,7 @@ wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/cat.wav https://paddlespe
 paddlespeech cls --input ./cat.wav --topk 10
 
 # Punctuation_restoration
-paddlespeech text --input 今天的天气真不错啊你下午有空吗我想约你一起去吃饭
+paddlespeech text --input 今天的天气真不错啊你下午有空吗我想约你一起去吃饭 --model ernie_linear_p3_wudao_fast
 
 # Speech_recognition
 wget -c https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav https://paddlespeech.bj.bcebos.com/PaddleAudio/en.wav
@@ -16,6 +16,7 @@ paddlespeech asr --model conformer_aishell --input ./zh.wav
 paddlespeech asr --model conformer_online_aishell --input ./zh.wav
 paddlespeech asr --model conformer_online_wenetspeech --input ./zh.wav
 paddlespeech asr --model conformer_online_multicn --input ./zh.wav
+paddlespeech asr --model conformer_u2pp_online_wenetspeech --lang zh --input zh.wav
 paddlespeech asr --model transformer_librispeech --lang en --input ./en.wav
 paddlespeech asr --model deepspeech2offline_aishell --input ./zh.wav
 paddlespeech asr --model deepspeech2online_wenetspeech --input ./zh.wav
